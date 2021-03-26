@@ -1,16 +1,4 @@
-# 极客时间：React 从入门到精通
-### 所有课程已经更新完毕，感谢大家支持！🎉🎉🎉
 
-本 Repo 包含了所有课程的演示代码，代码由 codesandbox.io 同步到本 Repo：https://codesandbox.io/s/6n20nrzlxz
-
-通过 codesandbox.io 您可以在线修改演示代码尝试运行结果，无需本地部署。
-
-[课程讲稿下载](https://github.com/supnate/react-geek-time/raw/master/GeekTime-React-Course.pdf)
-
-# Demo 结构
-如下图，左侧为所有代码，按课程顺序进行 Demo 的组织。右侧为演示界面，菜单显示了所有可运行的 Demo 链接。点击菜单可以看到运行的结果。
-
-<img src="/demo.png?raw=true" /> 
 
 # Demo 列表
 * 01 chat-app: 简单的 React 组件和交互演示
