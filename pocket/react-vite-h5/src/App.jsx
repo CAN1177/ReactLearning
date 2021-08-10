@@ -10,6 +10,9 @@ import zhCN from 'zarm/lib/config-provider/locale/zh_CN'
 import 'zarm/dist/zarm.css'
 
 import routes from '../src/router'
+
+import NavBar from '@/components/NavBar';
+
 function App() {
   return <Router>
     <ConfigProvider primaryColor={'#007fff'} locale={zhCN}>
@@ -21,6 +24,7 @@ function App() {
         }
       </Switch>
     </ConfigProvider>
+    <NavBar showNav={true} />
   </Router>
 }
 
