@@ -19,7 +19,7 @@ function App() {
   useEffect(() => {
     console.log(pathname)
     setShowNav(needNav.includes(pathname))
-  }, [pathname]) // [] 内的参数若是变化，便会执行上述回调函数=
+  }, [pathname]) // [] 内的参数若是变化，便会执行上述回调函数(判断路径是否存在)
   return <>
     <ConfigProvider primaryColor={'#007fff'}>
       <Switch>

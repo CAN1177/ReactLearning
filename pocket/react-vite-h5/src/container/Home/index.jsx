@@ -27,11 +27,12 @@ const Home = () => {
 
   useEffect(() => {
     getBillList() // 初始化
-    console.log('typeRef', typeRef)
+    // console.log('typeRef', typeRef)
   }, [page, currentSelect, currentTime])
 
   const getBillList = async () => {
     const { data } = await get(`/api/bill/list?page=${page}&page_size=5&date=${currentTime}&type_id=${currentSelect.id || 'all'}`);
+    console.log('%c 🥪 data: ', 'font-size:20px;background-color: #465975;color:#fff;', data);
     // 下拉刷新，重制数据
     if (page == 1) {
       setList(data.list);
@@ -122,7 +123,8 @@ const Home = () => {
           }}
         >
           {
-            list.map((item, index) => <BillItem
+            list.map((item, index) => 
+            <BillItem
               bill={item}
               key={index}
             />)

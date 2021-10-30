@@ -3,11 +3,13 @@ import { Cell, Input, Button, Checkbox, Toast } from "zarm";
 import CustomIcon from "@/components/CustomIcon";
 import Captcha from "react-captcha-code";
 import cx from "classnames";
+import { useHistory } from "react-router-dom";
 
 import s from "./style.module.less";
 import { post } from "@/utils";
 
 const Login = () => {
+  const history = useHistory();
   const captchaRef = useRef();
   const [type, setType] = useState("login"); // 登录注册类型
   const [username, setUsername] = useState(""); // 账号
@@ -57,6 +59,7 @@ const Login = () => {
     } catch (error) {
       Toast.show("系统错误");
     }
+    history.push(`/`);
   };
   useEffect(() => {
     document.title = type == "login" ? "登录" : "注册";
